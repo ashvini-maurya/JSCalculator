@@ -2,8 +2,8 @@ $(document).ready(function() {
 
 	var inputs = [""];
 	var totalString;
-	var operators1 = ["+", "-", "*", "/"];
-	var operators2 = ["."];
+	var operators1 = ["+", "-", "*", "/", "."];
+	// var operators2 = ["."];
 	var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
@@ -11,8 +11,11 @@ $(document).ready(function() {
 		if((inputs.includes(".") && input === ".")){
 			console.log("duplicate dots found");
 		}
-		else if(inputs.length === 1 && operators1.includes(input) === true){
-			console.log("can't start with operator");
+		// else if(inputs.length === 1 && operators1.includes(input) === true){
+		// 	console.log("can't start with operator");
+		// }
+		else if(input === "."){
+			inputs = ["0", "."];
 		}
 		else if(operators1.includes(inputs[inputs.length - 1]) === false){
 			inputs.push(input);
