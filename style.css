@@ -1,0 +1,38 @@
+body {
+	background-color: black;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+.panel {
+	width: 330px;
+	height: 75px;
+	margin: auto;
+   	margin-top: 30px;
+   	padding-top: 10px;
+}
+
+.container-fluid {
+	background-color: grey;
+	width: 500px;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#panel-body {
+	font-size: 2em;
+}
+
+button {
+	margin: 7px;
+	width: 5vw;
+	height: 4vw;
+}
+
+.largeButton {
+	width: 155px;
+}
