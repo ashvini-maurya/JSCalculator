@@ -2,8 +2,8 @@ $(document).ready(function() {
 
 	var inputs = [""];
 	var totalString;
-	var operators1 = ["+", "-", "*", "/", "."];
-	// var operators2 = ["."];
+	var operators1 = ["+", "-", "*", "/"];
+	var operators2 = ["."];
 	var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
