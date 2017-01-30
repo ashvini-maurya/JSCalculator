@@ -8,13 +8,10 @@ $(document).ready(function() {
 
 
 	function getValue(input){
-		if((inputs.includes(".") && input === ".")){
-			console.log("duplicate dots found");
+		if(inputs.length === 1 && operators1.includes(input) === true){
+			console.log("can't start with operator");
 		}
-		// else if(inputs.length === 1 && operators1.includes(input) === true){
-		// 	console.log("can't start with operator");
-		// }
-		else if(input === "."){
+		else if(inputs[0] === "."){
 			inputs = ["0", "."];
 		}
 		else if(operators1.includes(inputs[inputs.length - 1]) === false){
