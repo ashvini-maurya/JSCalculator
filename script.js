@@ -15,9 +15,11 @@ $(document).ready(function() {
 			inputs = ["0", "."];
 		}
 		else if(operators1.includes(inputs[inputs.length - 1]) === false){
+			InputLength();
 			inputs.push(input);
 		}
 		else if(nums.includes(Number(input))){
+			InputLength();
 			inputs.push(input);
 		}
 		update();
@@ -31,10 +33,8 @@ $(document).ready(function() {
 
 	function getTotal(){
 		result = eval(inputs.join(""));
-		//console.log(result);
 		document.getElementById('panel-body').innerHTML = result;
 		inputs = ["", result+''];
-		
 	}
 
 
@@ -60,5 +60,12 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+	function InputLength(){
+		if(inputs.length > 21) {
+			alert("Digit Limit Exceeded");
+			inputs = [""];
+		}
+	}
 
 });
